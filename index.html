@@ -3,6 +3,13 @@
   <head>
     <meta charset="utf-8">
     <title>HTML Academy: Седона</title>
+    <style>
+      main {
+          background: url(img/background.jpg) no-repeat;
+        }
+    </style>
+    <link href="css/style.scss" rel="stylesheet">
+    <link href="fonts/PTC55F.ttf" rel="stylesheet" type="text/css">
   </head>
   <body>
     <header class="main_header">
@@ -15,6 +22,9 @@
               <a href="#">Фото и видео</a>
           </li>
           <li>
+              <a href="#"><img src="img/logo.png" width="138" height="70" alt="Логотип"></a>
+          </li>
+          <li>
               <a href="#">Карта штата</a>
           </li>
           <li>
@@ -23,66 +33,75 @@
         </ul>
       </nav>
     </header>
-    <main class="container">
+    <main class="container"> 
       <div>
-          <h2>Седона - небольшой городок в Аризоне, заслуживающий большего!</h2>
-          <p>Рассмотрим 5 причин, по которым Седона круче, чем Грнад каньон!</p>
+        <img src="img/down_line.png" width="auto" height="273" alt="Седона_это">
       </div>
       <div class="first_attraction">
-        <div>
-          <h3>Настоящий городок</h3>
+        <div class="blue">
+          <h2>Настоящий городок</h2>
           <p>№1</p>
           <p>Седона - не атракцион для туристов, там течет своя жизнь</p>
         </div>
         <div class="attraction_1">
-          <img src="#" width="" height="">
+          <img src="img/foto1_1.jpg" width="800" height="256">
         </div>
       </div>
       <section class="features">
         <div class="feature_item">
+          <img src="img/house_item.png" width="75" height="72">
           <b class="feature_name">Жилье</b>
           <p>Рекомендуем пожить в настоящем мотеле, все как в кино</p>
         </div>
         <div class="feature_item">
+          <img src="img/burger_item.png" width="74" height="70">
           <b class="feature_name">Еда</b>
           <p>Всегда заказывайте фирменный бургер, вы не разочаруетесь</p>
         </div>
         <div class="feature_item">
+          <img src="img/gift_item.png" width="64" height="76">
           <b class="feature_name">Сувениры</b>
           <p>Не только китайского, но и местного производства</p>
         </div>
       </section>
       <div class="second_attraction">
-        <div>
-          <h3>Там есть мост дьявола</h3>
+        <div class="attraction_2">
+          <img src="img/foto1_2.jpg" width="800" height="256">
+        </div>
+        <div class="blue">
+          <h2>Там есть мост дьявола</h2>
           <p>№2</p>
           <p>Да, по нему можно пройти, если конечно вы осмелитесь</p>
-        </div>
-        <div class="attraction_2">
-          <img src="#" width="" height="">
         </div>
       </div>
       <div class="attractiones">
         <ul>
           <li class="attraction_item">
-            <h3>Небольная площадь</h3>
-            <p><№3</p>
+            <h2>Небольная площадь</h2>
+            <p>№3</p>
             <p>Все достопримечательности находятся очень близко</p>
           </li>
           <li class="attraction_item">
-            <h3>Красивая дорога</h3>
+            <h2>Красивая дорога</h2>
             <p>№4</p>
             <p>Ехать в Седону из Лас-Вегаса совсем не скучно</p>
           </li>
           <li class="attraction_item">
-            <h3>Мало туристов</h3>
+            <h2>Мало туристов</h2>
             <p>№5</p>
             <p>Большинство едет в Гранд каньон и толпится там</p>
           </li>
         </ul>
       </div>
+      <div class="form_hotel">
+          <h1>Заинтересовались?</h1>
+          <p>Укажите предполагаемые даты поездки, и мы покажем вам лучшие предложения гостиниц в Седоне</p>
+          <form>
+            <input type="submit" name="Поиск гостиниц в Седоне" value="Поиск гостиниц в Седоне">
+          </form>
+      </div>
       <div class="map">
-        <img src="img/map_contacts.png" width="#" height="#" alt="map_contacts">
+        <img src="img/map_contacts.png" width="1200" height="593" alt="map_contacts">
       </div>
     </main>
     <footer>
@@ -111,7 +130,7 @@
         </div>
         <div class="website_by">
           <p>website by</p>
-          <img src="#" width="#" height="#" alt="htmlacademy">
+          <img src="img/htmlacademy.png" width="113" height="39" alt="htmlacademy">
         </div>
       </div>
     </footer>
