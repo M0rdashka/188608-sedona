@@ -10,20 +10,23 @@ body {
     
 }
 .main_header {
-    margin: 0;
     width: auto;
     background: white;
     list-style: none;
     height: 56px;
 }
 .main_navigation ul {
+    margin: 0;
+    display: block;
+    width: 1200px;
     text-align: left;
-    margin: 0 72px;
+    padding: 0 72px;
+    height: 56px;
 }
 .main_navigation li {
     margin: 0;
     display: inline-block;
-    width: 240px;
+    width: 264px;
     height: 56px;
 }
 .logo {
@@ -72,8 +75,7 @@ h2 {
     height: 256px;
 }
 .blue {
-    display: inline-block;
-    float: left;
+     float: left;
     color: white;
     width: 400px;
     height: 256px;
@@ -86,7 +88,6 @@ h2 {
     margin: auto;    
 }
 .feature_item {
-    display: inline-block;
     float: left;
     width: 400px;
     height: 330px;
@@ -101,12 +102,10 @@ h2 {
 }
 .second_attraction .attraction {
     float:left;
-    display: block;
     margin: auto;
     width: 800px;
 }
 .second_attraction .blue {
-    display: inline-block;
     float: right;
     color: white;
     width: 400px;
@@ -163,7 +162,6 @@ footer {
     height: 120px;  
 }
 .tour_place {
-    display:inline;
     float: left;
     width: 400px;
     height: 120px;
@@ -171,9 +169,9 @@ footer {
     text-transform: uppercase;  
     font-weight: bold;
     padding-top: 51px;
+    text-align: center;
 }
 .social {
-    display: inline-block;
     float:left;
     width: 400px;
     height: 120px;
@@ -182,6 +180,7 @@ footer {
     text-decoration: none;
     display: inline-block;
     margin-right: 6px;
+    text-align: center;
 }
 #square {
     width: 46px;
@@ -189,7 +188,6 @@ footer {
     background: #81b3d2;
 }
 .website_by {
-    display: inline-block;
     float: right;
     width: 400px;
     height: 120px;
