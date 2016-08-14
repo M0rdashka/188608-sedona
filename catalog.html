@@ -5,11 +5,12 @@
     <title>HTML Academy: Седона</title>
     <link rel="stylesheet" href="css/style.css">
     <link href="fonts/PTC55F.ttf" rel="stylesheet" type="text/css">
-  <!--  <style>
+    <style>
       form {
           background: url(img/background_catalog.jpg) no-repeat;
+          background-position: 50% 0;
         }
-    </style>-->
+    </style>
   </head>
   <body>
     <header class="main_header">
@@ -34,59 +35,48 @@
       </nav>
     </header>
     <main class="container">
-      <form action="/">
-        <div>
-          <section class="range_slider">
+      <form action="\">
+        <div class="range_slider">
+          <div class="category_price">
+            <label>От</label>
+              <input type="text" name="price_form2.1" value="0" id="minprice">
+            <label>до</label>
+              <input type="text" name="price_form2.2" value="3000" id="maxprice">
+          </div>
+          <section>
             <b class="title_form">Стоимость</b>
             <input type="range" min="0" max="3000" step="0.5" value="5">
             <input type="range" min="0" max="3000" step="0.5" value="3000">
           </section>
-        <div class="category_price">
-          <label>От</label>
-            <input type="text" name="price_form2.1" value="0" id="minprice">
-          <label>до</label>
-            <input type="text" name="price_form2.2" value="3000" id="maxprice">
+          <div class="input_form">
+            <input type="submit" value="Показать"> 
+          </div>
         </div>
-        <div>
+        <div class="infrastructure">
           <b>Инфраструктура:</b>
           <label><input name="option_pool" type="checkbox" value="pool" checked>Басейн</label>
           <label><input name="option_parking" type="checkbox" value="parking">Парковка</label>
           <label><input name="option_wi_fi" type="checkbox" value="Wi_Fi">Wi-Fi</label>
         </div>
-        <div>
+        <div class="rank_houses">
           <b>Тип жилья:</b>
           <label><input name="option_hotel" type="checkbox" value="hotel" checked>Гостиница</label>
           <label><input name="option_motel" type="checkbox" value="preference">Мотель</label>
           <label><input name="option_apartments" type="checkbox" value="news">Апартаменты</label>
         </div>
-        <div>
-          <input type="submit" value="Показать">
-        </div>
       </form>
-      <div>
-        <div>
-          <b>Сортировка:</b>
+      <div class="collating">
+        <div class="find_item">
+            <h2>Найдено:3</h2>
         </div>
-        <div>
-          <ul class="assortment">
-            <li class="assortment_price">
-              <a href="#">по цене</a>
-            </li>
-            <li class="assortment_type">
-              <a href="#">по типу</a>
-            </li>
-            <li class="assortment_rating">
-              <a href="#">по рейтингу</a>
-            </li>
-          </ul>
+        <div class="sorting">
+          <p><b>Сортировка:</b></p>
+          <p><a href="#">по цене</a></p>
+          <p><a href="#">по типу</a></p>
+          <p><a href="#">по рейтингу</a></p>
         </div>
-        <div>
-          <div>
-            <a href="#" alt="up_arrow"></a>
-          </div>
-          <div>
-            <a href="#" alt="down_arrow"></a>
-          </div>
+        <div class="arrow_sorting">
+          <p><a href="#" alt="up_arrow">+</a><a href="#" alt="down_arrow">-</a></p>
         </div>
       </div>
       <div class="catalog">
