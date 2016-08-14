@@ -75,7 +75,7 @@ h2 {
     height: 256px;
 }
 .blue {
-     float: left;
+    float: left;
     color: white;
     width: 400px;
     height: 256px;
@@ -193,7 +193,7 @@ footer {
     height: 120px;
     text-align: center;
 }
-. contacts {
+.contacts {
     width: 1200px;
     height: 120px;
     margin: auto;
@@ -203,3 +203,105 @@ footer {
     display: table;
     clear: both;
 }
+<!-- -->
+.container {
+    width: 1200px;
+    height: auto;
+    display: block;
+    margin: auto;
+}
+form {
+    width: 1200px;
+    height: 217px;
+}
+.infrastructure {
+    margin-top: 30px;
+    width: 300px;
+    height: 217px;
+    float: left;
+}
+.rank_houses {
+    width: 300px;
+    height: 217px;
+    float: left;
+     margin-top: 30px;
+}
+.range_slider {
+    margin-top: 30px;
+    width: 600px;
+    height: 217px;
+    float: right; 
+    text-align: center;
+}
+.input_form {
+    width: 137px;
+    height: 36px;
+    border: 2px;
+    border-color: white;
+    background: none;
+    color: white;
+    margin: 0 50%;
+}
+.collating {
+    width: 1200px;
+    background: white;
+    list-style: none;
+    position: relative;
+}
+.collating H2 {
+    font-size: 21px;
+    text-transform: uppercase;
+    color: black;
+    line-height: 26px;
+    font-weight: bold;
+    font-family: "PT Sans";
+}
+.find_item {
+    float: left;
+    width: 211px;
+    height: 87px;
+    padding-left: 72px;
+    text-align: center;
+}
+.sorting {
+    float: left;
+    width: 389px;
+    height: 87px;
+    list-style-type: none;
+    background: pink;
+}
+.sorting b {
+    padding-left: 20px;
+    float: left;
+    text-align: center;
+}
+.sorting p {
+    float: left;
+    text-align: center;
+    padding-left: 25px;
+}
+.sorting p a {
+    color: black; 
+}
+.sorting p a:hover {
+    text-decoration: none;
+    color: #3272b0;
+}
+.arrow_sorting {
+    margin: auto;
+    float:right;
+    width: 120px;
+    height: 87px;
+    padding-right: 72px;
+    background: lightblue;
+    
+}
+.arrow_sorting p {
+    text-align: right;
+}
+collating::after {
+    content: "";
+    display: table;
+    clear: both;
+} 
+
