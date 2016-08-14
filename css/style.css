@@ -1,10 +1,58 @@
 body {
+    width: 1200px;
     font-size: 14px;
     line-height: 21px;
     color: #333333;
     font-weight: normal;
-    list-style-type: none;
+    list-style: none;
     font-family: "PT Sans";
+    margin: 0 auto;
+    
+}
+.main_header {
+    width: auto;
+    background: white;
+    list-style: none;
+    height: 56px;
+}
+.main_navigation ul {
+    margin: 0;
+    display: block;
+    width: 1200px;
+    text-align: left;
+    padding: 0 72px;
+    height: 56px;
+}
+.main_navigation li {
+    margin: 0;
+    display: inline-block;
+    width: 264px;
+    height: 56px;
+}
+.logo {
+    width: 138px;
+    height: 70px;
+    margin: -56px 531px;
+}
+.main_navigation li:nth-child(3) {
+    text-align: right;
+}
+.main_navigation li:nth-child(4) {
+    text-align: right;
+}
+a {
+    color:black;
+    text-decoration: none;
+}
+.welcome_logo {
+    display: block;
+    margin: 62px 371px;
+    width: 458px;
+    height: 352px;
+}
+.white_line {
+    margin: 24px 0 0;
+    display: block;
 }
 h1 {
     font-size: 30px;
@@ -22,28 +70,80 @@ h2 {
     font-weight: bold;
     font-family: "PT Sans";
 }
-li {
-     list-style-type: none;
-}
-.attractiones > h2 {
-    font-size: 21px;
-    text-transform: uppercase;
-    color: black;
+.first_attraction {
+    width: 1200px;
+    height: 256px;
 }
 .blue {
-    display: inline-block;
-    float: left;
+     float: left;
     color: white;
     width: 400px;
     height: 256px;
     background-color: #81b3d2;
     text-align: center;
 }
-.attraction_2 {
+.features {
+    width: 1200px;
+    height: 330px;
+    margin: auto;    
+}
+.feature_item {
+    float: left;
+    width: 400px;
+    height: 330px;
+    text-align: center;
+    padding-top: 60px;
+    box-sizing: border-box;
+}
+.second_attraction {
+    width: 1200px;
+    height: 256px;
+    margin: auto;
+}
+.second_attraction .attraction {
     float:left;
-    display: block;
+    margin: auto;
+    width: 800px;
+}
+.second_attraction .blue {
+    float: right;
+    color: white;
+    width: 400px;
+    height: 256px;
+    background-color: #81b3d2;
+    text-align: center;
+    margin: auto;
+}
+.attractiones {
+    clear:both;
+    width: 1200px;
+    height: 313px;
+    margin: auto;
+}
+.attraction_3 {
+    float: left;
+    width: 400px;
+    height: 313px;
+    text-align: center;
+}
+.attraction_4 {
+    float: left;
+    width: 400px;
+    height: 313px;
+    text-align: center;
+}
+.attraction_5 {
+    float: right;
+    width: 400px;
+    height: 313px;
+    text-align: center;
+}
+.attractiones h2{
+    color: black;
 }
 .form_hotel {
+    display: inline;
+    margin: auto;
     text-align: center;
 }
 .form_hotel > form > input {
@@ -54,4 +154,52 @@ li {
     border: none;
     text-transform: uppercase;
     font-size: 21px;
+}
+footer {
+    width: auto;
+    background: white;
+    list-style: none;
+    height: 120px;  
+}
+.tour_place {
+    float: left;
+    width: 400px;
+    height: 120px;
+    font-size: 21px;
+    text-transform: uppercase;  
+    font-weight: bold;
+    padding-top: 51px;
+    text-align: center;
+}
+.social {
+    float:left;
+    width: 400px;
+    height: 120px;
+}
+.social li {
+    text-decoration: none;
+    display: inline-block;
+    margin-right: 6px;
+    text-align: center;
+}
+#square {
+    width: 46px;
+    height: 48px;
+    background: #81b3d2;
+}
+.website_by {
+    float: right;
+    width: 400px;
+    height: 120px;
+    text-align: center;
+}
+. contacts {
+    width: 1200px;
+    height: 120px;
+    margin: auto;
+}
+.contacts::after {
+    content: "";
+    display: table;
+    clear: both;
 }

@@ -3,9 +3,10 @@
   <head>
     <meta charset="utf-8">
     <title>HTML Academy: Седона</title>
-    <style>
-      main {
+  <style>
+      body {
           background: url(img/background.jpg) no-repeat;
+          background-position: 50% 0;
         }
     </style>
     <link href="css/style.css" rel="stylesheet">
@@ -22,19 +23,22 @@
               <a href="#">Фото и видео</a>
           </li>
           <li>
-              <a href="#"><img src="img/logo.png" width="138" height="70" alt="Логотип"></a>
-          </li>
-          <li>
               <a href="#">Карта штата</a>
           </li>
           <li>
-              <a href="#">Навигация</a>
+              <a href="#">Гостиницы</a>
           </li>
         </ul>
-      </nav>
+        <div class="logo">
+            <a href="#"><img src="img/logo.png" width="138" height="70" alt="Логотип"></a>
+        </div>
+        </nav>
     </header>
     <main class="container"> 
-      <div>
+      <div class="welcome_logo">
+        <img src="img/welcome.png" width="458" height="352" alt="Welcome">
+      </div>
+      <div class="white_line">
         <img src="img/down_line.png" width="auto" height="273" alt="Седона_это">
       </div>
       <div class="first_attraction">
@@ -43,7 +47,7 @@
           <p>№1</p>
           <p>Седона - не атракцион для туристов, там течет своя жизнь</p>
         </div>
-        <div class="attraction_1">
+        <div class="attraction">
           <img src="img/foto1_1.jpg" width="800" height="256">
         </div>
       </div>
@@ -65,7 +69,7 @@
         </div>
       </section>
       <div class="second_attraction">
-        <div class="attraction_2">
+        <div class="attraction">
           <img src="img/foto1_2.jpg" width="800" height="256">
         </div>
         <div class="blue">
@@ -75,23 +79,21 @@
         </div>
       </div>
       <div class="attractiones">
-        <ul>
-          <li class="attraction_item">
+        <div class="attraction_3">
             <h2>Небольная площадь</h2>
             <p>№3</p>
             <p>Все достопримечательности находятся очень близко</p>
-          </li>
-          <li class="attraction_item">
+        </div>
+        <div class="attraction_4">
             <h2>Красивая дорога</h2>
             <p>№4</p>
             <p>Ехать в Седону из Лас-Вегаса совсем не скучно</p>
-          </li>
-          <li class="attraction_item">
+        </div>
+        <div class="attraction_5">
             <h2>Мало туристов</h2>
             <p>№5</p>
             <p>Большинство едет в Гранд каньон и толпится там</p>
-          </li>
-        </ul>
+        </div>
       </div>
       <div class="form_hotel">
           <h1>Заинтересовались?</h1>
@@ -105,26 +107,23 @@
       </div>
     </main>
     <footer>
-      <div>
+      <div class="contacts">
         <div class="tour_place">
           <p>#visitsedona</p>
         </div>
-        <div>
-          <ul class="social">
+        <div class="social">
+          <ul>
             <li class="icon_twitter">
-              <a href="#">
-                <img src="#" width="#" height="#" alt="twitter">
-              </a>
+              <div id="square"></div>
+              <a href="#">t</a>
             </li>
             <li class="icon_facebook">
-              <a href="#">
-                <img src="#" width="#" height="#" alt="facebook">
-              </a>
+              <div id="square"></div>
+              <a href="#">f</a>
             </li>
             <li class="icon_youtube">
-              <a href="#">
-                <img src="#" width="#" height="#" alt="youtube">
-              </a>
+              <div id="square"></div>
+              <a href="#">youtube</a>
             </li>
           </ul>
         </div>
