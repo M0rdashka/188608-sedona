@@ -217,19 +217,16 @@ form {
 .infrastructure {
     margin-top: 30px;
     width: 300px;
-    height: 217px;
     float: left;
 }
 .rank_houses {
     width: 300px;
-    height: 217px;
     float: left;
      margin-top: 30px;
 }
 .range_slider {
     margin-top: 30px;
     width: 600px;
-    height: 217px;
     float: right; 
     text-align: center;
 }
@@ -268,7 +265,6 @@ form {
     width: 389px;
     height: 87px;
     list-style-type: none;
-    background: pink;
 }
 .sorting b {
     padding-left: 20px;
@@ -290,18 +286,60 @@ form {
 .arrow_sorting {
     margin: auto;
     float:right;
-    width: 120px;
+    width: 456px;
     height: 87px;
     padding-right: 72px;
-    background: lightblue;
-    
 }
 .arrow_sorting p {
     text-align: right;
 }
-collating::after {
+.arrow_sorting a {
+    color: black; 
+}
+.arrow_sorting a:hover {
+    text-decoration: none;
+    color: #3272b0;
+}
+.collating::after {
     content: "";
     display: table;
     clear: both;
 } 
-
+.catalog {
+    width: 1200px;
+    height: auto;
+    margin:auto;
+}
+article {
+    margin: 0;
+    width: 1056px;
+    height: 150px;
+    padding: 0 72px;
+}
+article h2 {
+    color: black;
+}
+.image_item {
+    width: 139px;
+    height: 150px;
+    float: left;
+}
+.name_item {
+    width: 389px;
+    height: 150px;
+    float: left;
+}
+.object_params {
+    width: 528px;
+    height: 150px;
+    float: left;
+    text-align: right;
+}
+.objec_params span {
+    color: black;
+}
+article::after {
+    content: "";
+    display: table;
+    clear: both;
+}
