@@ -138,9 +138,6 @@ h2 {
     height: 313px;
     text-align: center;
 }
-.map {
-    margin: 0;
-}
 .attractiones h2{
     color: black;
 }
@@ -338,7 +335,7 @@ article h2 {
     float: left;
     text-align: right;
 }
-.objec_params span {
+.object_params span {
     color: black;
 }
 article::after {
