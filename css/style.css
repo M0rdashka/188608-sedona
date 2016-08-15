@@ -138,15 +138,19 @@ h2 {
     height: 313px;
     text-align: center;
 }
+.map {
+    margin: 0;
+}
 .attractiones h2{
     color: black;
 }
 .form_hotel {
-    display: inline;
-    margin: auto;
+    display: inline-block;
     text-align: center;
+    height: 232px;
+    width: 1200px;
 }
-.form_hotel > form > input {
+.form_hotel > input {
     background-color: #81b3d2;
     width: 568px;
     height: 86px;
@@ -156,10 +160,9 @@ h2 {
     font-size: 21px;
 }
 footer {
-    width: auto;
     background: white;
     list-style: none;
-    height: 120px;  
+    height: 120px; 
 }
 .tour_place {
     float: left;
@@ -182,7 +185,7 @@ footer {
     margin-right: 6px;
     text-align: center;
 }
-#square {
+.square {
     width: 46px;
     height: 48px;
     background: #81b3d2;
@@ -196,14 +199,14 @@ footer {
 .contacts {
     width: 1200px;
     height: 120px;
-    margin: auto;
+    margin: 0;
 }
+
 .contacts::after {
     content: "";
     display: table;
     clear: both;
 }
-<!-- -->
 .container {
     width: 1200px;
     height: auto;
