@@ -12,32 +12,33 @@ body {
 .main_header {
     width: auto;
     background: white;
-    list-style: none;
-    height: 56px;
+    height: auto;
 }
-.main_navigation ul {
+.main_menu {
     margin: 0;
-    display: block;
     width: 1200px;
-    text-align: left;
+    list-style: none;
     padding: 0 72px;
-    height: 56px;
+    text-align: center;
+    box-sizing: border-box;
 }
-.main_navigation li {
-    margin: 0;
+.main_menu li {
     display: inline-block;
-    width: 264px;
-    height: 56px;
+    text-align: left;
+    padding: 15px 67px;
+    width: 105px;
+    font-size: 14px;
+    line-height: 26px;
 }
 .logo {
-    width: 138px;
-    height: 70px;
-    margin: -56px 531px;
+    position: absolute;
+    top: 0;
+    left: 600px;
 }
-.main_navigation li:nth-child(3) {
+.main_menu li:nth-child(3) {
     text-align: right;
 }
-.main_navigation li:nth-child(4) {
+.main_menu li:nth-child(4) {
     text-align: right;
 }
 a {
