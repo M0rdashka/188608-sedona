@@ -1,13 +1,12 @@
 body {
-    width: 1200px;
+    margin: 0 auto;
+    min-width: 1200px;
     font-size: 14px;
     line-height: 21px;
     color: #333333;
     font-weight: normal;
-    list-style: none;
     font-family: "PT Sans";
-    margin: 0 auto;
-    
+    text-transform: uppercase;
 }
 .main_header {
     width: auto;
@@ -20,15 +19,18 @@ body {
     list-style: none;
     padding: 0 72px;
     text-align: center;
-    box-sizing: border-box;
 }
 .main_menu li {
+    font-weight: bold;
     display: inline-block;
     text-align: left;
     padding: 15px 67px;
     width: 105px;
     font-size: 14px;
     line-height: 26px;
+}
+.main_menu li:hover {
+    background: lightblue;
 }
 .logo {
     position: absolute;
@@ -71,15 +73,22 @@ h2 {
     font-weight: bold;
     font-family: "PT Sans";
 }
-.first_attraction {
-    width: 1200px;
-    height: 256px;
+.first_attraction h2{
+    padding-top: 50px;
+    padding-right: 130px;
+    padding-left: 130px;
+    width: 140px;
+}
+.first_attraction p {
+    padding-left: 50px;
+    padding-right: 50px;
+    vertical-align: middle;
+    padding-bottom: 28px;
+    width: 300px;
 }
 .blue {
     float: left;
     color: white;
-    width: 400px;
-    height: 256px;
     background-color: #81b3d2;
     text-align: center;
 }
@@ -95,6 +104,15 @@ h2 {
     text-align: center;
     padding-top: 60px;
     box-sizing: border-box;
+}
+.feuture_item img{
+    
+}
+.feuture_item b {
+    
+}
+.feuture_item p {
+    
 }
 .second_attraction {
     width: 1200px;
