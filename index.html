@@ -15,22 +15,24 @@
   </head>
   <body>
     <header class="main_header">
-        <ul class="main_menu">
-          <li>
+        <div>
+          <ul class="main_menu">
+            <li>
               <a href="#">Информация</a>
-          </li>
-          <li>
+            </li>
+            <li>
               <a href="#">Фото и видео</a>
-          </li>
-          <li>
+            </li>
+            <li>
               <a href="#">Карта штата</a>
-          </li>
-          <li>
+            </li>
+            <li>
               <a href="#">Гостиницы</a>
-          </li>
+            </li>
         </ul>
         <div class="logo">
             <a href="#"><img src="img/logo.png" width="138" height="70" alt="Логотип"></a>
+        </div>
         </div>
     </header>
     <main class="container"> 
@@ -40,30 +42,30 @@
       <div class="white_line">
         <img src="img/down_line.png" width="1200" height="273" alt="Седона_это">
       </div>
-      <div class="first_attraction">
+      <div class="attraction">
         <div class="blue">
           <h2>Настоящий городок</h2>
-          <p>- №1 -<br>
-          Седона - не атракцион для туристов, там течет своя жизнь</p>
+          - №1 -
+          <p>Седона - не атракцион для туристов, там течет своя жизнь</p>
         </div>
-        <div class="attraction">
+        <div>
           <img src="img/foto1_1.jpg" width="800" height="256">
         </div>
       </div>
       <section class="features">
         <div class="feature_item">
           <img src="img/house_item.png" width="75" height="72">
-          <b class="feature_name">Жилье</b>
+          <b>Жилье</b>
           <p>Рекомендуем пожить в настоящем мотеле, все как в кино</p>
         </div>
         <div class="feature_item">
           <img src="img/burger_item.png" width="74" height="70">
-          <b class="feature_name">Еда</b>
+          <b>Еда</b>
           <p>Всегда заказывайте фирменный бургер, вы не разочаруетесь</p>
         </div>
         <div class="feature_item">
           <img src="img/gift_item.png" width="64" height="76">
-          <b class="feature_name">Сувениры</b>
+          <b>Сувениры</b>
           <p>Не только китайского, но и местного производства</p>
         </div>
       </section>
@@ -73,24 +75,24 @@
         </div>
         <div class="blue">
           <h2>Там есть мост дьявола</h2>
-          <p>№2</p>
+          <span>- №2 -</span>
           <p>Да, по нему можно пройти, если конечно вы осмелитесь</p>
         </div>
       </div>
       <div class="attractiones">
         <div class="attraction_3">
             <h2>Небольная площадь</h2>
-            <p>№3</p>
+            <p>- №3 -</p>
             <p>Все достопримечательности находятся очень близко</p>
         </div>
         <div class="attraction_4">
             <h2>Красивая дорога</h2>
-            <p>№4</p>
+            <p>- №4 -</p>
             <p>Ехать в Седону из Лас-Вегаса совсем не скучно</p>
         </div>
         <div class="attraction_5">
             <h2>Мало туристов</h2>
-            <p>№5</p>
+            <p>- №5 -</p>
             <p>Большинство едет в Гранд каньон и толпится там</p>
         </div>
       </div>
@@ -98,37 +100,58 @@
         <h1>Заинтересовались?</h1>
         <p>Укажите предполагаемые даты поездки, и мы покажем вам лучшие предложения гостиниц в Седоне</p>
         <input type="submit" name="Поиск гостиниц в Седоне" value="Поиск гостиниц в Седоне">
+        <div class="modal_content">
+          <form class="data_tour" action="#" method="post">
+              <div class="arrival">
+                <p>Дата заезда:</p>
+                <input class="icon_arrival" type="text" name="arrival" placeholder="24 апреля 2016">
+                <span class="icon-calendar"></span>
+              </div>
+              <div class="arrival">
+                <p>Дата выезда:</p>
+                <input class="icon_arrival" type="text" name="arrival" placeholder="4 июля 2016">
+                <span class="icon-calendar"></span>
+              </div>
+              <div class="person">
+                <p>Взрослые:</p>
+                <span class="icon-minus"></span>
+                <input class="icon_person" type="text" name="person" placeholder="2">
+                <span class="icon-plus"></span>
+              </div>
+              <div class="children">
+                <p>Дети:</p>
+                <span class="icon-minus"></span>
+                <input class="icon_children" type="text" name="children" placeholder="1">
+                <span class="icon-plus"></span>
+              </div>
+          </form>
+          <input class="form_search" type="submit" name="найти" value="НАЙТИ">
+        </div>
       </div>
       <div class="map">
         <img src="img/map_contacts.png" width="1200" height="593" alt="map_contacts">
       </div>
     </main>
-    <footer>
+    <footer class="main_footer">
       <div class="contacts">
         <div class="tour_place">
           <p>#visitsedona</p>
         </div>
         <div class="social">
           <ul>
-            <li class="icon_twitter">
-              <div class="square">
-                <a href="#">t</a>
-              </div>
+            <li class="icon_twitter square">
+                <a href="#"><span class="icon-twitter"></span></a>
             </li>
-            <li class="icon_facebook">
-              <div class="square">
-                <a href="#">f</a>
-              </div>
+            <li class="icon_facebook square">
+                <a href="#"><span class="icon-facebook"></span></a>
             </li>
-            <li class="icon_youtube">
-              <div class="square">
-                 <a href="#">yt</a> 
-              </div>
+            <li class="icon_youtube square">
+                <a href="#"><span class="icon-youtube"></span></a> 
             </li>
           </ul>
         </div>
         <div class="website_by">
-          <p>website by</p>
+          <span>website by</span>
           <img src="img/htmlacademy.png" width="113" height="39" alt="htmlacademy">
         </div>
       </div>
