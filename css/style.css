@@ -53,6 +53,7 @@ body {
 a {
     color:black;
     text-decoration: none;
+    cursor: pointer;
 }
 .welcome_logo {
     display: block;
@@ -215,6 +216,7 @@ h2 {
     text-transform: uppercase;
     font-size: 21px;
     display: inline-block;
+    cursor: pointer;
 }
 .form_hotel > input:active {
     background-color: #766357;
@@ -227,6 +229,7 @@ h2 {
     top: 236px;
     left: 316px;
     background: white;
+    box-shadow: 0 30px 40px rgba(0, 0, 0, 0.3);
 }
 .arrival {
     width: 458px;
@@ -253,6 +256,15 @@ h2 {
     bottom: 0px;
     right: 0px;
     font-weight: bold;
+    cursor: pointer;
+}
+.arrival input[type="text"] {
+    font-size: 14px;
+    line-height: 26px;
+    font-family: "PT Sans", "Arial";
+    color: black;
+    text-transform: uppercase;
+    background-image: url(.icon-calander)
 }
 .arrival .icon-calendar {
     position: absolute;
@@ -282,6 +294,7 @@ h2 {
     bottom: 68px;
     left: 52px;
     position: relative;
+    cursor: pointer;
 }
 .person span{
     bottom: 66px;
@@ -290,7 +303,12 @@ h2 {
     width: 38px;
     left: 52px;
 }
-.person span:hover{
+.children span:hover{
+    bottom: 66px;
+    position: relative;
+    display: inline-block;
+    width: 38px;
+    left: 52px;
     color: #a9a9a9;
 }
 .children  {
@@ -313,6 +331,7 @@ h2 {
     bottom: 68px;
     left: 52px;
     position: relative;
+    cursor: pointer;
 }
 .children span{
     bottom: 66px;
@@ -322,6 +341,11 @@ h2 {
     left: 52px;
 }
 .children span:hover{
+    bottom: 66px;
+    position: relative;
+    display: inline-block;
+    width: 38px;
+    left: 52px;
     color: #a9a9a9;
 }
 .modal_content .form_search {
@@ -333,6 +357,7 @@ h2 {
     color: white;
     font-size: 21px;
     line-height: 26px;
+    cursor: pointer;
 }
 .modal_content .form_search:active {   
     width: 458px;
@@ -403,6 +428,7 @@ footer {
     position: absolute;
     top: 40px;
     right: 100px;
+    cursor: pointer;
 }
 .website_by img:hover {
     opacity: 0.6;
@@ -548,35 +574,42 @@ footer {
     display: block;
     margin-right: 15px;
 }
-.kind-checkbox label {
-    display: block;
-    position: relative;
+.rank_houses label {
+    display: inline-block;
+    margin-bottom: 15px;
 }
-.kind-checkbox input[type="checkbox"] {
-    display: none;    
+.infrastructure label {
+    display: inline-block;
+    margin-bottom: 15px;
 }
 .kind-checkbox {
     position: relative;
-    left: 5px;
     cursor: pointer;
 }
-.kind-checkbox input[type="checkbox"]:checked + span {
-    display: inline;
+.kind-checkbox input[type="checkbox"] {
+    display: none;
 }
-.kind-checkbox:first-child label, .kind-checkbox:nth-child(2) label {
-    display: block;
+.kind-checkbox:hover{
+    color: aqua;
 }
-.icon-check-on, .icon-check-off {
-    font-size: 1.7em;
+.kind-checkbox input[type="checkbox"] + span {
+    font-size: 26px;
+    line-height: 20px;
+}
+.kind-checkbox input[type="checkbox"] + .icon-check-off::before, .kind-checkbox input[type="checkbox"]checked + .icon-check-on::after {
+    content: "\2611";
     position: relative;
-    top: 2px;
-    right: 10px;
 }
 .rank_houses {
     float: left;
     display: block;
     margin-top: 30px;
     color: white;
+}
+.rank_houses b {
+    font-size: 16px;
+    line-height: 21px;
+    display: block;
 }
 .settings_hotels {
     width: 1056px;
@@ -706,6 +739,7 @@ article p {
     margin-right: 5px;
     position: relative;
     bottom: 11px;
+    cursor: pointer;
 }
 .btn_1:hover {
     opacity: 0.6;
@@ -721,6 +755,7 @@ article p {
     text-transform: uppercase;
     position: relative;
     bottom: 11px;
+    cursor: pointer;
 }
 .btn_2:hover {
     opacity: 0.6;
