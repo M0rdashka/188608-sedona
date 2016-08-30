@@ -238,6 +238,7 @@ h2 {
     width: 458px;
     margin: 0 auto;
     position: relative;
+    bottom: 38px;
 }
 .arrival p {
     width: 100px;
@@ -280,13 +281,15 @@ h2 {
 .person {
     width: 229px;
     height: 40px;
+    position: relative;
+    bottom: 38px;
     float: left;
 }
 .person p{
     font-size: 14px;
     line-height: 26px;
     margin-left: 0px;
-    margin-top: 6px;
+    margin-top: 0px;
     font-weight: bold;
 }
 .person input{
@@ -325,13 +328,15 @@ h2 {
     width: 229px;
     height: 40px;
     float: left;
+    position: relative;
+    bottom: 38px;
 }
 .children  p {
     font-weight: bold;
     font-size: 14px;
     line-height: 26px;
-    margin-left: 45px;
-    margin-top: 6px;
+    margin-left: 40px;
+    margin-top: 0;
 }
 .children  input{
     width: 38px;
@@ -353,6 +358,7 @@ h2 {
     font-size: 21px;
     line-height: 26px;
     cursor: pointer;
+    margin-top: 0;
 }
 .modal_content .form_search:hover {   
     background: #669ec0;
@@ -604,8 +610,8 @@ a span:active {
 .kind-checkbox input[type="checkbox"] {
     display: none;
 }
-.kind-checkbox:hover{
-    color: aqua;
+.kind-checkbox:active {
+    opacity: 0.4;
 }
 .kind-checkbox input[type="checkbox"] + .icon-check-off {
     font-size: 26px;
