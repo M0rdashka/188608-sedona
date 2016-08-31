@@ -889,7 +889,6 @@ article::after {
   src: url("../fonts/symbols-sedona.woff") format("woff"),
        url("../fonts/symbols-sedona.woff2") format("woff2");
 }
-
 [class^="icon-"]::before,
 [class*=" icon-"]::before {
   display: inline-block;
