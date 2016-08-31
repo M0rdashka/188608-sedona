@@ -459,7 +459,7 @@ a span:active {
     float: right;
     width: 113px;
     height: 39px;
-    margin-right: 103px;
+    margin-right: 100px;
     position: relative;
     bottom: 10px;
     background: url(../img/htmlacademy.png) no-repeat;
@@ -482,7 +482,7 @@ a span:active {
 .clear {
     clear: both;
 }
-.filter-range {
+.filter_range {
     position: relative;
     top: 30px;
     float: right;
@@ -492,13 +492,13 @@ a span:active {
     color: #ffffff;
     text-transform: uppercase;
 }
-.filter-range-title {
+.filter_range_title {
     margin-bottom: 9px;
     font-weight: 600;
     font-size: 16px;
     line-height: 21px;
 }
-.price-controls {
+.price_controls {
     position: relative;
     height: 36px;
     margin-bottom: 20px;
@@ -506,7 +506,7 @@ a span:active {
     border: 2px solid #ffffff;
     border-radius: 2px;
 }
-.price-controls::after {
+.price_controls::after {
     content: "";
     position: absolute;
     top: 50%;
@@ -516,19 +516,19 @@ a span:active {
     background: #ffffff;
     transform: translate(-50%, -50%);
 }
-.price-controls label {
+.price_controls label {
     display: inline-block;
     font-size: 14px;
     line-height: 38px;
     vertical-align: top;
     cursor: pointer;
 }
-.price-controls .min-price,
-.price-controls .max-price {
+.price_controls .min_price,
+.price_controls .max_price {
     width: 90px;
     padding-left: 65px;
 }
-.price-controls input {
+.price_controls input {
     width: 50px;
     margin: 0;
     color: inherit;
@@ -537,20 +537,20 @@ a span:active {
     border: none;
     outline: none;
 }
-.range-controls {
+.range_controls {
     position: relative;
     margin-bottom: 32px;
 }
-.range-controls .scale {
+.range_controls .scale {
     height: 2px;
     background: rgba(255, 255, 255, 0.3);
 }
-.range-controls .bar {
+.range_controls .bar {
     width: 80%;
     height: 2px;
     background: #ffffff;
 }
-.range-toggle {
+.range_toggle {
     position: absolute;
     top: -9px;
     width: 4px;
@@ -561,16 +561,16 @@ a span:active {
     box-shadow: 0 2px 1px 0 rgba(0, 1, 1, 0.2);
     cursor: pointer;
 }
-.range-toggle:hover {
+.range_toggle:hover {
     background: #1c4f80;
 }
-.range-toggle-min {
+.range_toggle_min {
     left: 0;
 }
-.range-toggle-max {
+.range_toggle_max {
     left: 80%;
 }
-.btn-transparent {
+.btn_transparent {
     display: block;
     margin: 0 auto;
     padding: 6px 35px;
@@ -585,7 +585,7 @@ a span:active {
     cursor: pointer;
 }
 
-.btn-transparent:hover {
+.btn_transparent:hover {
     color: #000000;
     background: #ffffff;
 }
@@ -627,11 +627,11 @@ a span:active {
     display: inline;
     position: relative;
 }
-.kind-checkbox {
+.kind_checkbox {
     position: relative;
     cursor: pointer;
 }
-.kind-checkbox input[type="checkbox"] {
+.kind_checkbox input[type="checkbox"] {
     display: none;
 }
 .icon-check-off {
@@ -656,16 +656,16 @@ a span:active {
     top: 1;
 }
 
-.kind-checkbox input[type="checkbox"] + .icon-check-on::before {
+.kind_checkbox input[type="checkbox"] + .icon-check-on::before {
     display: block;
 } 
-.kind-checkbox input[type="checkbox"] + .icon-check-off::before {
+.kind_checkbox input[type="checkbox"] + .icon-check-off::before {
     display: none;
 }
-.kind-checkbox input[type="checkbox"]:checked + .icon-check-off::before {
+.kind_checkbox input[type="checkbox"]:checked + .icon-check-off::before {
     display: block;
 } 
-.kind-checkbox input[type="checkbox"]:checked + .icon-check-on::before {
+.kind_checkbox input[type="checkbox"]:checked + .icon-check-on::before {
     display: none;
 }
 .rank_houses {
@@ -694,7 +694,7 @@ a span:active {
     font-size: 0px;
     margin-top: -6px;
 }
-.sorting-block h2 {
+.sorting_block h2 {
     font-size: 21px;
     text-transform: uppercase;
     color: black;
@@ -707,14 +707,14 @@ a span:active {
     display: block;
     float: left;
 }
-.sorting-block {
+.sorting_block {
     display: inline-block;
     width: 1057px;
     padding-left: 72px;
     padding-right: 72px;
     background: white;
 }
-.sorting-block b {
+.sorting_block b {
     float: left;
     font-size: 12px;
     line-height: 18px;
@@ -725,12 +725,12 @@ a span:active {
     padding-left: 45px;
 }
 
-.sort-type {
+.sort_type {
     float: left;
     display: inline-block;
     margin: 0;
 }
-.sort-type li {
+.sort_type li {
     list-style: none;
     display: inline-block;
     font-size: 12px;
@@ -740,18 +740,18 @@ a span:active {
     margin-bottom: 35px;
     float: left;
 }
-.sort-type li:nth-child(1) {
+.sort_type li:nth-child(1) {
     margin-left: 0;
 }
-.sort-type li a {
+.sort_type li a {
     color: #ccc;
      border-bottom: 1px dotted #81b3d2;
 }
-.sort-type li a:hover {
+.sort_type li a:hover {
     color: #81b3d2;
      border-bottom: 1px dotted #81b3d2;
 }
-.sort-type li a:active {
+.sort_type li a:active {
     color: black;
     border-bottom: none;
 }
@@ -827,7 +827,7 @@ article p {
     text-transform: uppercase;
     margin-right: 5px;
     position: relative;
-    bottom: 14px;
+    bottom: 10px;
     cursor: pointer;
 }
 .btn_1:hover {
@@ -851,7 +851,7 @@ article p {
     color: white;
     text-align: center;
     text-transform: uppercase;
-    bottom: 14px;
+    bottom: 10px;
     position: relative;
     cursor: pointer;
     outline: none;
