@@ -9,7 +9,6 @@ body {
     text-transform: uppercase;
     box-shadow: 15px 0 30px rgba(0, 0, 0, 0.2), -15px 0 30px rgba(0, 0, 0, 0.2);
 }
-
 .main_header{
     width: auto;
     padding: 0 72px;
@@ -489,7 +488,7 @@ a span:active {
     width: 330px;
     margin-top: 0; 
     margin-right: 72px;
-    color: #ffffff;
+    color: #fff;
     text-transform: uppercase;
 }
 .filter_range_title {
@@ -503,7 +502,7 @@ a span:active {
     height: 36px;
     margin-bottom: 20px;
     font-size: 0;
-    border: 2px solid #ffffff;
+    border: 2px solid #fff;
     border-radius: 2px;
 }
 .price_controls::after {
@@ -513,7 +512,7 @@ a span:active {
     left: 50%;
     width: 2px;
     height: 22px;
-    background: #ffffff;
+    background: #fff;
     transform: translate(-50%, -50%);
 }
 .price_controls label {
@@ -548,7 +547,7 @@ a span:active {
 .range_controls .bar {
     width: 80%;
     height: 2px;
-    background: #ffffff;
+    background: #fff;
 }
 .range_toggle {
     position: absolute;
@@ -556,7 +555,7 @@ a span:active {
     width: 4px;
     height: 4px;
     background: #ababab;
-    border: 8px solid #ffffff;
+    border: 8px solid #fff;
     border-radius: 50%;
     box-shadow: 0 2px 1px 0 rgba(0, 1, 1, 0.2);
     cursor: pointer;
@@ -759,7 +758,7 @@ a span:active {
     margin: 0;
     list-style: none;
     font-size: 23px;
-    color: #cccccc;
+    color: #ccc;
 }
 .arrow_sorting li {
     float: right;
@@ -906,7 +905,6 @@ article::after {
   font-variant: normal;
   speak: none;
 }
-
 .icon-facebook::before { content: "\66"; } /* "f" */
 .icon-twitter::before { content: "\74"; } /* "t" */
 .icon-up-dir::before { content: "\25b2"; } /* "▲" */
