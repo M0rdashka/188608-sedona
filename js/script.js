@@ -5,8 +5,7 @@
 
         div.addEventListener("click", function(event) {
             event.preventDefault();
-            popup.classList.add("modal_content_show");
-            
+            popup.classList.add("modal_content_show");     
             if (storage) {
             person.value = storage;    
             }
