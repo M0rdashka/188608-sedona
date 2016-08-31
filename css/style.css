@@ -7,6 +7,7 @@ body {
     font-weight: normal;
     font-family: "PT Sans";
     text-transform: uppercase;
+    box-shadow: 15px 0 30px rgba(0, 0, 0, 0.2), -15px 0 30px rgba(0, 0, 0, 0.2);
 }
 
 .main_header{
@@ -89,10 +90,10 @@ h2 {
 }
 .attraction {
     display: block;
-    margin-top: 0px;
+    margin-top: 0;
     width: 1200px;    
 }
-.attraction h2{
+.attraction h2 {
     padding-top: 50px;
     padding-right: 130px;
     padding-left: 130px;
@@ -227,12 +228,21 @@ h2 {
 .modal_content { 
     width: 458px;
     padding: 55px;
-    display: inline-block;
+    display: none;
     position: absolute;
     top: 236px;
     left: 316px;
     background: white;
-    box-shadow: 0 30px 40px rgba(0, 0, 0, 0.3);
+    box-shadow: 0 30px 40px rgba(0, 0, 0, 0.2);
+}
+.modal_content_show {
+    display: block;
+}
+.modal_content span:hover {
+    color: black;
+}
+.modal_contant span:active {
+    color: #81b3d2;
 }
 .arrival {
     width: 458px;
@@ -268,7 +278,7 @@ h2 {
     font-family: "PT Sans", "Arial";
     color: black;
     text-transform: uppercase;
-    background-image: url(.icon-calander)
+    background-image: url(.icon-calendar)
 }
 .arrival .icon-calendar {
     position: absolute;
@@ -277,6 +287,9 @@ h2 {
     top: 5px;
     right: 0;
     color:  #a9a9a9;
+}
+.arrival .icon-calendar:active {
+    color: #81b3d2;
 }
 .person {
     width: 229px;
@@ -318,12 +331,7 @@ h2 {
     left: 52px;
     color: #a9a9a9;
 }
-.data_tour span:hover {
-    color: black;
-}
-.data_tour span:active {
-    color: #81b3d2;
-}
+
 .children  {
     width: 229px;
     height: 40px;
@@ -347,6 +355,15 @@ h2 {
     left: 52px;
     position: relative;
     cursor: pointer;
+}
+.modal_content_show {
+    display: block;
+    animation: lite 0.8s;
+}
+@keyframes lite {
+    0% {transform: translateX(-1000px);}
+    70% {transform: translateX(50px);}
+    100% {transform: translateX(0px);}
 }
 .modal_content .form_search {
     border: 0;
@@ -597,11 +614,18 @@ a span:active {
 .rank_houses label {
     display: inline-block;
     margin-bottom: 15px;
-    right: 7px;
 }
 .infrastructure label {
     display: inline-block;
-    margin-bottom: 15px;  
+    margin-bottom: 15px;
+}
+.infrastructure p {
+    display: inline;
+    position: relative;
+}
+.rank_houses p {
+    display: inline;
+    position: relative;
 }
 .kind-checkbox {
     position: relative;
@@ -610,31 +634,38 @@ a span:active {
 .kind-checkbox input[type="checkbox"] {
     display: none;
 }
-.kind-checkbox:active {
-    opacity: 0.4;
-}
-.kind-checkbox input[type="checkbox"] + .icon-check-off {
+.icon-check-off {
     font-size: 26px;
     line-height: 20px;
     vertical-align: middle;
+    position: relative;
+    left: -9px;
+}
+.icon-check-off:active {
+    opacity: 0.4;
+}
+.icon-check-on:active {
+    opacity: 0.4;
 }
 .icon-check-on {
     font-size: 26px;
     line-height: 20px;
     vertical-align: middle;
-    
+    position: absolute;
+    left: -7px;
+    top: 1;
 }
 
-.kind-checkbox input[type="checkbox"] + .icon-check-off::before {
+.kind-checkbox input[type="checkbox"] + .icon-check-on::before {
     display: block;
 } 
-.kind-checkbox input[type="checkbox"] + .icon-check-on::before {
+.kind-checkbox input[type="checkbox"] + .icon-check-off::before {
     display: none;
 }
-.kind-checkbox input[type="checkbox"]:checked + .icon-check-on::before {
+.kind-checkbox input[type="checkbox"]:checked + .icon-check-off::before {
     display: block;
 } 
-.kind-checkbox input[type="checkbox"]:checked + .icon-check-off::before {
+.kind-checkbox input[type="checkbox"]:checked + .icon-check-on::before {
     display: none;
 }
 .rank_houses {
@@ -889,4 +920,3 @@ article::after {
 .icon-plus::before { content: "\e801"; } /* "" */
 .icon-minus::before { content: "\e802"; } /* "" */
 .icon-youtube::before { content: "\f39e"; } /* "" */
-

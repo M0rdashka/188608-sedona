@@ -10,8 +10,9 @@
         }
     </style>
     <link href="css/style.css" rel="stylesheet">
-    <link rel="stylesheet" href="css/normalize.css">
+    <link href="css/normalize.css" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=PT+Sans:400,700&subset=cyrillic" rel="stylesheet">
+    <script src="https://api-maps.yandex.ru/2.0-stable/?load=package.standard&lang=ru-RU" type="text/javascript"></script>
   </head>
   <body>
     <header class="main_header">
@@ -99,34 +100,32 @@
       <div class="form_hotel">
         <h1>Заинтересовались?</h1>
         <p>Укажите предполагаемые даты поездки, и мы покажем вам лучшие предложения гостиниц в Седоне</p>
-        <input type="submit" name="Поиск гостиниц в Седоне" value="Поиск гостиниц в Седоне">
-        <div class="modal_content">
-          <form class="data_tour" action="#" method="post">
+        <input class="for_modal_content" type="submit" name="Поиск гостиниц в Седоне" value="Поиск гостиниц в Седоне">
+        <form class="modal_content" action="#" method="post">
               <div class="arrival">
                 <p>Дата заезда:</p>
-                <input class="icon_arrival" type="text" name="arrival" placeholder="24 апреля 2016">
+                <input class="icon_arrival" type="text" name="arrival" placeholder="24 апреля 2016" required>
                 <span class="icon-calendar"></span>
               </div>
               <div class="arrival">
                 <p>Дата выезда:</p>
-                <input class="icon_arrival" type="text" name="arrival" placeholder="4 июля 2016">
+                <input class="icon_arrival" type="text" name="departure" placeholder="4 июля 2016" required>
                 <span class="icon-calendar"></span>
               </div>
               <div class="person">
                 <p>Взрослые:</p>
                 <span class="icon-minus"></span>
-                <input class="icon_person" type="text" name="person" placeholder="2">
+                <input class="icon_person" type="text" name="person" value="2" required>
                 <span class="icon-plus"></span>
               </div>
               <div class="children">
                 <p>Дети:</p>
                 <span class="icon-minus"></span>
-                <input class="icon_children" type="text" name="children" placeholder="1">
+                <input class="icon_children" type="text" name="children" value="1" required>
                 <span class="icon-plus"></span>
               </div>
-          </form>
           <input class="form_search" type="submit" name="найти" value="НАЙТИ">
-        </div>
+          </form>
       </div>
       <div class="map">
         <img src="img/map_contacts.png" width="1200" height="593" alt="map_contacts">
@@ -157,5 +156,6 @@
         </div>
       </div>
     </footer>
+    <script src="js/script.js"></script>
   </body>
 </html>
