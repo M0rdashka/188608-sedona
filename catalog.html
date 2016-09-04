@@ -3,17 +3,13 @@
   <head>
     <meta charset="utf-8">
     <title>HTML Academy: Седона</title>
-    <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="css/normalize.css">
-    <style>
-      .container {
-          background: url(img/background_catalog.jpg) no-repeat;
-          background-position: 50% 0;
-        }
-    </style>
+    <link rel="stylesheet" href="css/style.min.css">
+    <link href="https://fonts.googleapis.com/css?family=PT+Sans:400,700&subset=cyrillic" rel="stylesheet">
   </head>
   <body>
-     <header class="main_header">
+    <div class="container_catalog">
+      <header class="main_header">
         <div>
           <ul class="main_menu">
             <li>
@@ -28,85 +24,113 @@
             <li>
               <a href="#">Гостиницы</a>
             </li>
-        </ul>
-        <div class="logo">
-            <a href="file:///C:/Users/%D0%94%D0%B0%D1%80%D1%8C%D1%8F/Documents/GitHub/188608-sedona/index.html"><img src="img/logo.png" width="138" height="70" alt="Логотип"></a>
+          </ul>
+          <div class="logo">
+            <a href="file:///C:/Users/%D0%94%D0%B0%D1%80%D1%8C%D1%8F/Documents/GitHub/188608-sedona/index.html">
+              <img src="img/logo.png" width="138" height="70" alt="Логотип">
+            </a>
+          </div>
         </div>
-      </div>
-    </header>
-    <main class="container">
-      <section class="filter_range">
-        <div class="filter_range_title">Стоимость в сутки (р):</div>
-        <div class="price_controls">
-        <label class="min_price">от <input type="text" name="min_price" value="0"></label>
-        <label class="max_price">до <input type="text" name="max_price" value="3000"></label>
-        </div>
-        <div class="range_controls">
-          <div class="scale">
-          <div class="bar"></div>
-        </div>
-        <div class="range_toggle range_toggle_min"></div>
-        <div class="range_toggle range_toggle_max"></div>
-      </div>
-      <button class="btn_transparent" type="submit">Показать</button>
-    </section>
+      </header>
+      <main class="container_catalog">
+        <section class="filter_range">
+          <div class="filter_range_title">
+            <h3>Стоимость в сутки (р):</h3>
+          </div>
+          <div class="price_controls">
+            <label class="min_price">от 
+              <input type="text" name="min_price" value="0">
+            </label>
+            <label class="max_price">до 
+              <input type="text" name="max_price" value="3000">
+            </label>
+          </div>
+          <div class="range_controls">
+            <div class="scale">
+              <div class="bar"></div>
+            </div>
+            <div class="range_toggle range_toggle_min"></div>
+            <div class="range_toggle range_toggle_max"></div>
+          </div>
+          <button class="btn_transparent" type="submit">Показать</button>
+        </section>
       <div class="settings_hotels">
         <section class="infrastructure">
-          <b>Инфраструктура:</b><br>
-            <label class="kind_checkbox"><input type="checkbox" name="pool"><span class="icon-check-on"></span><span class="icon-check-off"></span></label><p>Басейн</p><br>
-            <label class="kind_checkbox"><input type="checkbox" name="parking"><span class="icon-check-on"></span><span class="icon-check-off"></span></label><p>Парковка</p><br>
-            <label class="kind_checkbox"><input type="checkbox" name="Wi_Fi"><span class="icon-check-on"></span><span class="icon-check-off"></span></label><p>Wi-Fi</p>
+          <h3>Инфраструктура:</h3>
+          <input type="checkbox" name="pool" id="pool">
+          <label class="kind_checkbox" for="pool">Бассейн</label>
+          <input type="checkbox" name="parking" id="parking">
+          <label class="kind_checkbox" for="parking">Парковка</label>
+          <input type="checkbox" name="Wi_Fi" id="Wi_Fi">
+          <label class="kind_checkbox" for="Wi_Fi">Wi-Fi</label>
         </section>
         <section class="rank_houses">
-          <b>Тип жилья:</b><br>
-            <label class="kind_checkbox"><input type="checkbox" name="hotel"><span class="icon-check-on"></span><span class="icon-check-off"></span></label><p>Гостиница</p><br>
-            <label  class="kind_checkbox"><input type="checkbox" name="preference"><span class="icon-check-on"></span><span class="icon-check-off"></span></label><p>Мотель</p><br>
-            <label class="kind_checkbox"><input type="checkbox" name="appartament"><span class="icon-check-on"></span><span class="icon-check-off"></span></label><p>Апартаменты</p>
+          <h3>Тип жилья:</h3>
+		  <input type="checkbox" name="hotel" id="hotel">
+          <label class="kind_checkbox" for="hotel">Гостиница</label>
+          <input type="checkbox" name="preference" id="preference">
+          <label  class="kind_checkbox" for="preference">Мотель</label>
+		  <input type="checkbox" name="appartament" id="appartament">
+          <label class="kind_checkbox" for="appartament">Апартаменты</label>
         </section>
       </div>
         <section class="sorting_block">
-          <h2>Найдено:3</h2>
+          <h2>Найдено: 3</h2>
           <b>Сортировка:</b>
           <ul class="sort_type">
-            <li><a href="#">по цене</a></li>
-            <li><a href="#">по типу</a></li>
-            <li><a href="#">по рейтингу</a></li>
+            <li>
+              <a href="#">по цене</a>
+            </li>
+            <li>
+              <a href="#">по типу</a>
+            </li>
+            <li>
+              <a href="#">по рейтингу</a>
+            </li>
           </ul>
           <ul class="arrow_sorting">
-             <li><a href="#" class="up_arrow icon-up-dir"></a></li>
-             <li><a href="#" class="down_arrow icon-down-dir"></a></li>
+            <li>
+              <a href="#" class="up_arrow icon-up-dir"></a>
+            </li>
+            <li>
+               <a href="#" class="down_arrow icon-down-dir"></a>
+            </li>
           </ul>
         </section>
         <section class="catalog">
           <article class="item1">
             <div class="image_item">
-              <img src="img/article1_1.jpg" width="135" height="90" alt="article1_1">
+              <img src="img/article1_1.jpg" width="135" height="90" alt="Amara_resort">
             </div>
             <div class="name_item"> 
-              <a>Amara resort & spa</a>
-                <p>Гостиница от 3500 Р.</p>
-              <input type="submit" class="btn_1" href="#" value="Подробнее">
-              <input type="submit" class="btn_2" href="#" value="Забронировать">
+              <h2>
+                <a>Amara resort & spa</a>
+              </h2>
+              <p>Гостиница от 3500 р.</p>
+              <input type="submit" class="btn_1" value="Подробнее">
+              <input type="submit" class="btn_2" value="Забронировать">
             </div>
             <div class="object_params">
               <div class="star">
-                 <span class="icon-star"></span> 
-                 <span class="icon-star"></span>
-                 <span class="icon-star"></span>
-                 <span class="icon-star"></span>
+                <span class="icon-star"></span> 
+                <span class="icon-star"></span>
+                <span class="icon-star"></span>
+                <span class="icon-star"></span>
               </div>
               <span>Рейтинг: 8.5</span>
             </div>
           </article>
           <article class="item">
             <div class="image_item"> 
-              <img src="img/article1_2.jpg" width="135" height="90" alt="article1_2">
+              <img src="img/article1_2.jpg" width="135" height="90" alt="Desert_Quail">
             </div>
             <div class="name_item">
-              <a>Desert Quail inn</a>
-              <p>Мотель от 2000 Р.</p>
-              <input type="submit" class="btn_1" href="#" value="Подробнее">
-              <input type="submit" class="btn_2" href="#" value="Забронировать">
+              <h2>
+                <a>Desert Quail inn</a>
+              </h2>
+              <p>Мотель от 2000 р.</p>
+              <input type="submit" class="btn_1" value="Подробнее">
+              <input type="submit" class="btn_2" value="Забронировать">
             </div>
             <div class="object_params">
               <div class="star">
@@ -118,13 +142,15 @@
           </article>
           <article class="item">
             <div class="image_item">
-              <img src="img/article1_3.jpg" width="135" height="90" alt="article1_3">
+              <img src="img/article1_3.jpg" width="135" height="90" alt="Poco_Diablo">
             </div>
             <div class="name_item">
-              <a>Villas at Poco Diablo</a>
-              <p>Апартаменты от 4000 Р.</p>
-              <input type="submit" class="btn_1" href="#" value="Подробнее">
-              <input type="submit" class="btn_2" href="#" value="Забронировать">
+              <h2>
+                <a>Villas at Poco Diablo</a>
+              </h2>
+              <p>Апартаменты от 4000 р.</p>
+              <input type="submit" class="btn_1" value="Подробнее">
+              <input type="submit" class="btn_2"   value="Забронировать">
             </div>
             <div class="object_params">
               <div class="star">
@@ -136,31 +162,38 @@
             </div>
           </article>
         </section>
-   </main>
-   <footer class="main_footer">
-      <div class="contacts">
-        <div class="tour_place">
-          <p>#visitsedona</p>
-        </div>
-        <div class="social">
-          <ul>
-            <li class="icon_twitter square">
-                <a href="#"><span class="icon-twitter"></span></a>
-            </li>
-            <li class="icon_facebook square">
-                <a href="#"><span class="icon-facebook"></span></a>
-            </li>
-            <li class="icon_youtube square">
-                <a href="#"><span class="icon-youtube"></span></a> 
-            </li>
-          </ul>
-        </div>
-        <div class="website_by">
-          <span>website by</span>
-          <div class="img_website">
+      </main>
+      <footer class="main_footer">
+        <div class="contacts">
+          <div class="tour_place">
+            <p>#visitsedona</p>
+          </div>
+          <div class="social">
+            <ul>
+              <li class="icon_twitter square">
+                <a href="#">
+                  <span class="icon-twitter"></span>
+                </a>
+              </li>
+              <li class="icon_facebook square">
+                <a href="#">
+                  <span class="icon-facebook"></span>
+                </a>
+              </li>
+              <li class="icon_youtube square">
+                <a href="#">
+                  <span class="icon-youtube"></span>
+                </a> 
+              </li>
+            </ul>
+          </div>
+          <div class="website_by">
+            <span>website by</span>
+            <div class="img_website">
+            </div>
           </div>
         </div>
-      </div>
-    </footer>
+      </footer>
+    </div>
   </body>
 </html>

@@ -3,37 +3,34 @@
   <head>
     <meta charset="utf-8">
     <title>HTML Academy: Седона</title>
-    <style>
-      body {
-          background: url(img/background.jpg) no-repeat;
-          background-position: 50% 0;
-        }
-    </style>
-    <link href="css/style.css" rel="stylesheet">
     <link href="css/normalize.css" rel="stylesheet">
+    <link href="css/style.min.css" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=PT+Sans:400,700&subset=cyrillic" rel="stylesheet">
   </head>
   <body>
+    <div class="container_index">
     <header class="main_header">
-        <div>
-          <ul class="main_menu">
-            <li>
-              <a href="#">Информация</a>
-            </li>
-            <li>
-              <a href="#">Фото и видео</a>
-            </li>
-            <li>
-              <a href="#">Карта штата</a>
-            </li>
-            <li>
-              <a href="file:///C:/Users/%D0%94%D0%B0%D1%80%D1%8C%D1%8F/Documents/GitHub/188608-sedona/catalog.html">Гостиницы</a>
-            </li>
+      <div>
+        <ul class="main_menu">
+          <li>
+            <a href="#">Информация</a>
+          </li>
+          <li>
+            <a href="#">Фото и видео</a>
+          </li>
+          <li>
+            <a href="#">Карта штата</a>
+          </li>
+          <li>
+            <a>Гостиницы</a>
+          </li>
         </ul>
         <div class="logo">
-            <a><img src="img/logo.png" width="138" height="70" alt="Логотип"></a>
+          <a>
+            <img src="img/logo.png" width="138" height="70" alt="Логотип">
+          </a>
         </div>
-        </div>
+      </div>
     </header>
     <main class="container"> 
       <div class="welcome_logo">
@@ -45,55 +42,55 @@
       <div class="attraction">
         <div class="blue">
           <h2>Настоящий городок</h2>
-          - №1 -
+          <p>- №1 -</p>
           <p>Седона - не атракцион для туристов, там течет своя жизнь</p>
         </div>
         <div>
-          <img src="img/foto1_1.jpg" width="800" height="256">
+          <img src="img/foto1_1.jpg" width="800" height="256" alt="Городок">
         </div>
       </div>
       <section class="features">
-        <div class="feature_item">
-          <img src="img/house_item.png" width="75" height="72">
+        <div class="feature_first">
+          <img src="img/house_item.png" width="75" height="72" alt="Домик">
           <b>Жилье</b>
           <p>Рекомендуем пожить в настоящем мотеле, все как в кино</p>
         </div>
-        <div class="feature_item">
-          <img src="img/burger_item.png" width="74" height="70">
+        <div class="feature_second">
+          <img src="img/burger_item.png" width="74" height="70" alt="Бургер">
           <b>Еда</b>
           <p>Всегда заказывайте фирменный бургер, вы не разочаруетесь</p>
         </div>
-        <div class="feature_item">
-          <img src="img/gift_item.png" width="64" height="76">
+        <div class="feature_third">
+          <img src="img/gift_item.png" width="64" height="76" alt="Подарок">
           <b>Сувениры</b>
           <p>Не только китайского, но и местного производства</p>
         </div>
       </section>
       <div class="second_attraction">
         <div class="attraction">
-          <img src="img/foto1_2.jpg" width="800" height="256">
+          <img src="img/foto1_2.jpg" width="800" height="256" alt="Мост_дьявола">
         </div>
         <div class="blue">
           <h2>Там есть мост дьявола</h2>
-          <span>- №2 -</span>
+          <p>- №2 -</p>
           <p>Да, по нему можно пройти, если конечно вы осмелитесь</p>
         </div>
       </div>
       <div class="attractiones">
         <div class="attraction_3">
-            <h2>Небольная площадь</h2>
-            <p>- №3 -</p>
-            <p>Все достопримечательности находятся очень близко</p>
+          <h2>Небольная площадь</h2>
+          <span>- №3 -</span>
+          <p>Все достопримечательности находятся очень близко</p>
         </div>
         <div class="attraction_4">
-            <h2>Красивая дорога</h2>
-            <p>- №4 -</p>
-            <p>Ехать в Седону из Лас-Вегаса совсем не скучно</p>
+          <h2>Красивая дорога</h2>
+          <span>- №4 -</span>
+          <p>Ехать в Седону из Лас-Вегаса совсем не скучно</p>
         </div>
         <div class="attraction_5">
-            <h2>Мало туристов</h2>
-            <p>- №5 -</p>
-            <p>Большинство едет в Гранд каньон и толпится там</p>
+          <h2>Мало туристов</h2>
+          <span>- №5 -</span>
+          <p>Большинство едет в Гранд каньон и толпится там</p>
         </div>
       </div>
       <div class="form_hotel">
@@ -101,33 +98,33 @@
         <p>Укажите предполагаемые даты поездки, и мы покажем вам лучшие предложения гостиниц в Седоне</p>
         <input class="for_modal_content" type="submit" name="Поиск гостиниц в Седоне" value="Поиск гостиниц в Седоне">
         <form class="modal_content" action="#" method="post">
-              <div class="arrival">
-                <p>Дата заезда:</p>
-                <input class="icon_arrival" type="text" name="arrival" placeholder="24 апреля 2016" required>
-                <span class="icon-calendar"></span>
-              </div>
-              <div class="arrival">
-                <p>Дата выезда:</p>
-                <input class="icon_arrival" type="text" name="departure" placeholder="4 июля 2016" required>
-                <span class="icon-calendar"></span>
-              </div>
-              <div class="person">
-                <p>Взрослые:</p>
-                <span class="icon-minus"></span>
-                <input class="icon_person" type="text" name="person" value="2" required>
-                <span class="icon-plus"></span>
-              </div>
-              <div class="children">
-                <p>Дети:</p>
-                <span class="icon-minus"></span>
-                <input class="icon_children" type="text" name="children" value="1" required>
-                <span class="icon-plus"></span>
-              </div>
+          <div class="arrival">
+            <p>Дата заезда:</p>
+            <input class="icon_arrival" type="text" name="arrival" placeholder="24 апреля 2016" required>
+            <span class="icon-calendar"></span>
+          </div>
+          <div class="departure">
+            <p>Дата выезда:</p>
+            <input class="icon_arrival" type="text" name="departure" placeholder="4 июля 2016" required>
+            <span class="icon-calendar"></span>
+          </div>
+          <div class="person">
+            <p>Взрослые:</p>
+            <span class="icon-minus"></span>
+            <input class="icon_person" type="text" name="person" value="2" required>
+            <span class="icon-plus"></span>
+          </div>
+          <div class="children">
+            <p>Дети:</p>
+            <span class="icon-minus"></span>
+            <input class="icon_children" type="text" name="children" value="1" required>
+            <span class="icon-plus"></span>
+          </div>
           <input class="form_search" type="submit" name="найти" value="НАЙТИ">
-          </form>
+        </form>
       </div>
       <div class="map">
-        <img src="img/map_contacts.png" width="1200" height="593" alt="map_contacts">
+        <img src="img/map_contacts.png" width="1200" height="593" alt="Карта">
       </div>
     </main>
     <footer class="main_footer">
@@ -138,13 +135,13 @@
         <div class="social">
           <ul>
             <li class="icon_twitter square">
-                <a href="#"><span class="icon-twitter"></span></a>
+              <a href="#"><span class="icon-twitter"></span></a>
             </li>
             <li class="icon_facebook square">
-                <a href="#"><span class="icon-facebook"></span></a>
+              <a href="#"><span class="icon-facebook"></span></a>
             </li>
             <li class="icon_youtube square">
-                <a href="#"><span class="icon-youtube"></span></a> 
+              <a href="#"><span class="icon-youtube"></span></a> 
             </li>
           </ul>
         </div>
@@ -155,6 +152,7 @@
         </div>
       </div>
     </footer>
-    <script src="js/script.js"></script>
+    <script src="js/script.min.js"></script>
+    </div>
   </body>
 </html>
