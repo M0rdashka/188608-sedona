@@ -447,11 +447,12 @@ h2 {
     }
 }
 
-.modal_content .form_search {
-    border: 0;
-    outline: 0;
+.modal_content a {
+    display: inline-block; 
+    padding-top: 16px; 
+    padding-bottom: 16px; 
+    text-decoration: none;
     width: 458px;
-    height: 58px;
     background: #81b3d2;
     color: #fff;
     font-size: 21px;
@@ -460,11 +461,11 @@ h2 {
     margin-top: 38px;
 }
 
-.modal_content .form_search:hover,.square:hover {
+.modal_content a:hover,.square:hover {
     background: #669ec0;
 }
 
-.modal_content .form_search:active,.square:active {
+.modal_content a:active,.square:active {
     background: #5496bd;
 }
 
@@ -635,10 +636,16 @@ a span:active {
 }
 
 .price_controls .max_price,.price_controls .min_price {
-    width: 89px;
-    padding-left: 66px;
-    padding-bottom: 10px;
-    height: 22px;
+    display: block;
+    width: 158px;
+    float: left;
+    text-align: center;
+    height: 35px;
+    line-height: 33px;
+    padding-left: 20px;
+    -webkit-box-sizing: border-box;
+       -moz-box-sizing: border-box;
+            box-sizing: border-box;
 }
 
 .price_controls input {
@@ -735,7 +742,9 @@ input[type=checkbox] {
     width: 220px;
     margin-bottom: 19px;
     padding-left: 30px;
-    padding-bottom: 0;
+    padding: 0;
+    padding-left: 30px;
+    line-height: 25px;
 }
 
 .infrastructure h3,.rank_houses h3 {
