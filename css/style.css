@@ -103,7 +103,7 @@ h1 {
     text-transform: uppercase;
     line-height: 24px;
     font-weight: 700;
-    font-family: "PT Sans";
+    font-family: "PT Sans", "Arial", sans-serif;
 }
 
 .feature_first b,.feature_second b,h2 {
@@ -118,7 +118,7 @@ h1 {
 
 h2 {
     line-height: 26px;
-    font-family: "PT Sans";
+    font-family: "PT Sans","Arial",sans-serif;
 }
 
 .attraction {
@@ -289,7 +289,7 @@ h2 {
     margin: 32px 370px 50px;
 }
 
-.form_hotel>input {
+input .for_modal_content {
     background-color: #81b3d2;
     width: 568px;
     height: 86px;
@@ -301,12 +301,12 @@ h2 {
     cursor: pointer;
 }
 
-.form_hotel>input:hover {
+input .for_modal_content:hover {
     background-color: #669ec0;
 }
 
-.form_hotel>input:active {
-    background-color: #5496bd;
+input .for_modal_content:active {
+    background-color: #766357;
 }
 
 .modal_content {
@@ -782,7 +782,7 @@ input[type=checkbox] {
     color: #000;
     line-height: 26px;
     font-weight: 700;
-    font-family: "PT Sans";
+    font-family: "PT Sans","Arial",sans-serif;
     margin-top: 30px;
     margin-bottom: 30px;
     text-align: left;
