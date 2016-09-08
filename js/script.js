@@ -5,7 +5,8 @@ var storage_child = localStorage.getItem("[name=children]");
 
 div.addEventListener("click", function(event) {
   event.preventDefault();
-  popup.classList.add("modal_content_show");     
+  popup.classList.add("modal_content_show");    
+  div.classList.add("active");    
 if (storage) {
   person.value = storage;    
 }
